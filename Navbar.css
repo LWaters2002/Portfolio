@@ -1,0 +1,81 @@
+/* Style the navbar */
+#navbar {
+  display: block;
+  margin: -10px -10px;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #e9b872;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav_item {
+  margin: 0px;
+  padding: 6px;
+  margin-right: 20px;
+  color: #170d17;
+  float: right;
+}
+
+#nav_titleName {
+  margin: 0px;
+  padding: 6px;
+  margin-left: 20px;
+  color: #170d17;
+  float: left;
+}
+
+#navgroup {
+  display: block;
+  justify-content: space-evenly;
+  float: right;
+  width: fit-content;
+}
+/* Navbar links */
+#navbar a {
+  display: inline;
+  color: #000000;
+  text-align: center;
+  padding: 4px;
+  margin: 0%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#navbar a :hover {
+  color: #ffffff;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}

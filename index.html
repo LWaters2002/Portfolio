@@ -1,90 +1,91 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="NavBar.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+    </style>
+
+    <title>Liam Waters</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo">NEXT</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links"> Home </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links"> Tech </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links"> Products </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="button"> Sign Up </a>
-          </li>
-        </ul>
+    <nav id="navbar">
+      <h3 id="nav_titleName">
+        <a href="index.html" style="text-decoration: none">LIAM WATERS</a>
+      </h3>
+      <div id="navgroup">
+        <h3 class="nav_item">
+          <a href="index.html" style="text-decoration: none">CONTACT</a>
+        </h3>
+        <h3 class="nav_item">
+          <a href="index.html" style="text-decoration: none">PORTFOLIO</a>
+        </h3>
+        <h3 class="nav_item">
+          <a href="index.html" style="text-decoration: none">HOME</a>
+        </h3>
       </div>
     </nav>
+    <div class="slideArea">
+      <!-- <h1>Liam Waters</h1> -->
+      <img src="./LiamTitle.png" alt="Liam Waters" class="Liam_Waters" />
+      <img
+        src="./LiamGDP.png"
+        alt="Games designer and programmer"
+        class="Games_Programmer_Designer"
+      />
 
-    <!-- Hero Section -->
+      <div id="ImageSlide">
+        <img
+          src="./PlaceholderImages/placeholder0.png"
+          alt="WorkShowcase"
+          class="imageReel"
+        />
+        <img
+          src="./PlaceholderImages/placeholder1.png"
+          alt="WorkShowcase"
+          class="imageReel"
+        />
+        <img
+          src="./PlaceholderImages/placeholder2.png"
+          alt="WorkShowcase"
+          class="imageReel"
+        />
+      </div>
+    </div>
     <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>NEXT GENERATION</h1>
-          <h2>TECHNOLOGY</h2>
-          <p>We different y'all</p>
-          <button class="main__btn"><a href="/">Get Started</a></button>
-        </div>
-        <div class="main__img--container">
-          <img src="images/pic1.svg" alt="Pic Here" id="main__img" />
-        </div>
-      </div>
-    </div>
+      <div class="aboutMe">
+        <div id="aboutMeText">
+          <h3 id="aboutMeTitle">ABOUT ME</h3>
 
-    <!-- Services Section -->
-    <div class="services">
-      <h1>See what the hype is bout</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Experience blissness yo</h2>
-          <p>Some Cool Tech IG</p>
-          <button>Get Started w/ it</button>
+          <p id="aboutMeP">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Proin aliquam, leo at luctus tempus, eros
+            lectus eleifend massa, quis sollicitudin erat magna non leo.
+            Vestibulum vel metus. Donec sagittis velit vel augue. Fusce in nisl
+            vitae massa venenatis rhoncus. Praesent orci velit, lobortis eget,
+            suscipit semper, congue eu, est. Quisque malesuada volutpat enim.
+            Vestibulum leo sem, molestie a, mattis bibendum, feugiat facilisis,
+            nisl. Nam scelerisque odio. Suspendisse fermentum faucibus felis.
+            Praesent pharetra. In consequat felis in tellus. In mi enim, rhoncus
+            ullamcorper, sagittis at, placerat eget, mauris. Suspendisse auctor
+            erat at ipsum. Aliquam vitae tortor id massa tincidunt eleifend.In
+            hac habitasse platea dictumst. Mauris rutrum enim vitae mauris.
+            Proin mattis eleifend pede. Sed pretium ante sit amet elit. Quisque
+            pede tellus, dictum eget,
+          </p>
         </div>
-        <div class="services__card">
-          <h2>ready?</h2>
-          <p>Leap ya self</p>
-          <button>Get Started w/ it</button>
-        </div>
+        <img
+          src="./PlaceholderImages/PlaceholderPerson.jpg"
+          id="personalImage"
+          alt=""
+        />
       </div>
     </div>
-
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">Testimon</a>
-            <a href="/">Careers</a>
-            <a href="/">Invest in me</a>
-            <a href="/">Terms of me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="app.js"></script>
   </body>
 </html>
