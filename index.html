@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="NavBar.css" />
-
+    <script src="scriptSrc.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
     </style>
@@ -58,6 +58,7 @@
         />
       </div>
     </div>
+    <div class="yellowBar"></div>
     <div class="main">
       <div class="aboutMe">
         <div id="aboutMeText">
@@ -85,6 +86,23 @@
           id="personalImage"
           alt=""
         />
+      </div>
+
+      <div class="portfolio">
+        <h1>PORTFOLIO</h1>
+        <div id="proffesion"></div>
+        <button class="portfolioButtons" id="buttonSelected">
+          EDUCATIONAL
+        </button>
+        <button class="portfolioButtons" value="personal">PERSONAL</button>
+        <br />
+        <button class="portfolioButtons" value="unity">UNITY</button>
+        <button class="portfolioButtons" value="unreal">UNREAL</button>
+        <button class="portfolioButtons" value="c#">C#</button>
+        <button class="portfolioButtons" value="c++">C++</button>
+        <button class="portfolioButtons" value="other">OTHER</button>
+
+        <div class="portfolioGrid"></div>
       </div>
     </div>
   </body>
