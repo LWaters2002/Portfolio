@@ -122,14 +122,6 @@ p {
   width: 600px;
 }
 
-.portfolio {
-  margin-left: auto;
-  margin-right: auto;
-  height: 1800px;
-  background-color: #a63d40;
-  text-align: center;
-}
-
 button {
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -156,18 +148,68 @@ button:hover {
   border-color: #632430;
 }
 
+.portfolio {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1800px;
+  background-color: #a63d40;
+  text-align: center;
+  min-width: fit-content;
+}
+
 .portfolioGrid {
-  display: flexbox;
-  gap: 20px;
-  height: 1500px;
+  display: flex;
+  height: 1200px;
   background-color: #632430;
-  padding: 60px 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+}
+
+.projectTile {
+  display: inline;
+  padding: 20px;
+  position: relative;
+  width: 28%;
+  height: fit-content;
+  transition: transform 0.4s ease; /* Animation */
 }
 
 .projectTile img {
-  object-fit: cover;
-  width: 32%;
-  height: auto;
   background: local;
+  display: inline-block;
+  aspect-ratio: 9/14;
+  width: 100%;
   background-color: white;
+  object-fit: cover;
+  transition: filter 0.4s ease; /* Animation */
+}
+
+.projectTile a {
+  display: inline-block;
+  width: 100%;
+}
+
+.projectTile:hover {
+  transform: scale(1.1) translate(0px, -30px);
+
+}
+
+.projectTile:hover img {
+  filter: brightness(0.3);
+}
+
+.projectTile p {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.projectTile:hover p {
+  opacity: 1;
+  transition: opacity 1s ease;
 }
