@@ -143,21 +143,31 @@ button {
   margin-bottom: 20px;
   padding-top: 0px;
   transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-sizing: border-box;
 }
 
 button:hover {
   border-bottom: 16px solid currentColor;
   border-color: #7d3542;
-  /* border-radius: 20px; */
 }
 
 #buttonSelected {
   border-bottom: 16px solid currentColor;
   border-color: #632430;
-  /* border-radius: 20px; */
 }
 
 .portfolioGrid {
+  display: flexbox;
+  gap: 20px;
   height: 1500px;
   background-color: #632430;
+  padding: 60px 50px;
+}
+
+.projectTile img {
+  object-fit: cover;
+  width: 32%;
+  height: auto;
+  background: local;
+  background-color: white;
 }
