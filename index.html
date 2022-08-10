@@ -24,7 +24,7 @@
           <a href="index.html" style="text-decoration: none">CONTACT</a>
         </h3>
         <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">PORTFOLIO</a>
+          <a href="#portfolio" style="text-decoration: none">PORTFOLIO</a>
         </h3>
         <h3 class="nav_item">
           <a href="index.html" style="text-decoration: none">HOME</a>
@@ -88,50 +88,73 @@
         />
       </div>
 
-      <div class="portfolio">
+      <div class="portfolio" id = "portfolio">
         <h1>PORTFOLIO</h1>
         <div id="proffesion"></div>
-        <button class="portfolioButtons" id="buttonSelected">
+        <button class="portfolioButtons" value="Educational" id="buttonSelected">
           EDUCATIONAL
         </button>
-        <button class="portfolioButtons" value="personal">PERSONAL</button>
+        <button class="portfolioButtons" value="Personal">PERSONAL</button>
         <br />
-        <button class="portfolioButtons" value="unity">UNITY</button>
-        <button class="portfolioButtons" value="unreal">UNREAL</button>
-        <button class="portfolioButtons" value="c#">C#</button>
-        <button class="portfolioButtons" value="c++">C++</button>
-        <button class="portfolioButtons" value="other">OTHER</button>
+        <button class="portfolioButtons" value="Unity">UNITY</button>
+        <button class="portfolioButtons" value="Unreal">UNREAL</button>
+        <button class="portfolioButtons" value="C#">C#</button>
+        <button class="portfolioButtons" value="C++">C++</button>
+        <button class="portfolioButtons" value="Other">OTHER</button>
 
         <div class="portfolioGrid">
-          <div class="projectTile">
-            <a href="https://www.google.com/">
-              <img src="./PlaceholderImages/placeholder0.png" alt="" />
-            </a>
-            <p>what</p>
+
+          <div class="projectTile" tags = "Unity, C#, Educational, Personal">
+            <a href="project-hye.html">
+              <img src="./PortfolioImages/HyeCover.PNG" alt="" />
+
+            <div class="cardCover">
+              <h3>HYE</h3>
+              <p>Hye is a third person shooter with intrinsic puzzle elements</p>
+              <h4>Tags: Unity,C#</h4>
+            </div>
+          </a>
           </div>
-          <div class="projectTile">
+
+          <div class="projectTile" tags = "Unreal, Educational, Blueprint, UMG">
             <a href="https://www.google.com/">
-              <img src="./PlaceholderImages/placeholder0.png" alt="" />
-            </a>
-            <p>what</p>
+              <img src="./PortfolioImages/BleakCover.png" alt="" />
+
+            <div class="cardCover" >
+              <h3>How We Rust</h3>
+              <p>How We Rust is an atmospheric puzzle game, made in the collaborative games module</p>
+              <h4>Tags: Unreal, Blueprint, UMG</h4>
+            </div>
+          </a>
           </div>
-          <div class="projectTile">
+
+          <div class="projectTile" tags = "Unreal, Educational,C++, Blueprint, UMG">
             <a href="https://www.google.com/">
-              <img src="./PlaceholderImages/placeholder0.png" alt="" />
-            </a>
-            <p>what</p>
+              <img src="./PortfolioImages/StaffsverseCover.PNG" alt="" />
+
+            <div class="cardCover">
+              <h3>Staffsverse</h3>
+              <p>Staffsverse is an interactive environment intended for new and international students.</p>
+              <h4>Tags: Unreal, Blueprint, UMG, C++</h4>
+            </div>
+
+          </a>
           </div>
-          <div class="projectTile">
+          
+          <div class="projectTile" id = "" tags = "Unreal, Educational, Blueprint, UMG">
             <a href="https://www.google.com/">
-              <img src="./PlaceholderImages/placeholder0.png" alt="" />
-            </a>
-            <p>what</p>
+              <img src="./PortfolioImages/MobaUICover.PNG" alt="" />
+
+            <div class="cardCover">
+              <h3>MOBA UI</h3>
+              <p>UI made for the User Interface Module at Staffordshire University</p>
+              <h4>Tags: Unreal, Blueprint, UMG</h4>
+            </div>
+          </a>
           </div>
-          <div class="projectTile">
-            <a href="https://www.google.com/">
-              <img src="./PlaceholderImages/placeholder0.png" alt="" />
-            </a>
-            <p>what</p>
+
+
+
           </div>
         </div>
       </div>

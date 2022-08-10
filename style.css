@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 .main {
   width: 66.7%;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -17,6 +22,23 @@ h1 {
   font-weight: 400;
   font-size: 10em;
   letter-spacing: -10px;
+  margin: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 4em;
+  letter-spacing: -px;
+  margin: 20px;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10em;
   margin: 20px;
 }
 
@@ -128,7 +150,7 @@ button {
   font-weight: 600;
   font-size: 3em;
   background: none;
-  border: none;
+  border: 0px;
   padding: 40px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -143,6 +165,10 @@ button:hover {
   border-color: #7d3542;
 }
 
+.portfolioButtons {
+  filter: drop-shadow(0px 4px 2px rgb(0, 0, 0, 0.5));
+}
+
 #buttonSelected {
   border-bottom: 16px solid currentColor;
   border-color: #632430;
@@ -151,29 +177,36 @@ button:hover {
 .portfolio {
   margin-left: auto;
   margin-right: auto;
-  height: 1800px;
+  height: fit-content;
   background-color: #a63d40;
   text-align: center;
   min-width: fit-content;
+  border-radius: 40px;
 }
 
 .portfolioGrid {
   display: flex;
-  height: 1200px;
+  flex-direction: row;
+  height: fit-content;
   background-color: #632430;
+  padding-bottom: 200px;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 40px;
   align-content: flex-start;
-
+  border-radius: 40px;
+  min-height: 1200px;
 }
 
 .projectTile {
-  display: inline;
+  display: flex;
   padding: 20px;
   position: relative;
   width: 28%;
   height: fit-content;
-  transition: transform 0.4s ease; /* Animation */
+  max-width: 400px;
+  transition: transform, flex-grow, position, filter 0.4s, 1s, 1s, .4s;
+  opacity: 1;
 }
 
 .projectTile img {
@@ -183,33 +216,85 @@ button:hover {
   width: 100%;
   background-color: white;
   object-fit: cover;
-  transition: filter 0.4s ease; /* Animation */
+  filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+  transition: .3s;
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 20px;
+}
+
+.projectTile:hover img {
+  filter: brightness(0.3) blur(1px) drop-shadow(0px 15px 5px rgb(0, 0, 0));
 }
 
 .projectTile a {
-  display: inline-block;
+  display: grid;
   width: 100%;
+  height: 100%;
 }
 
 .projectTile:hover {
   transform: scale(1.1) translate(0px, -30px);
-
 }
 
-.projectTile:hover img {
-  filter: brightness(0.3);
+.projectTile h3 {
+  display: block;
+  z-index: 2;
+  text-align: left;
+  font-size: 350%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 0%;
 }
 
 .projectTile p {
-  display: inline;
-  position: absolute;
-  top: 20px;
-  left: 40px;
+  display: block;
   z-index: 2;
-  opacity: 0;
+  text-align: left;
+  font-size: 180%;
+  margin-top: 0%;
+  margin-left: 5%;
 }
 
-.projectTile:hover p {
+.projectTile h4 {
+  display: block;
+  z-index: 2;
+  text-align: left;
+  font-size: 220%;
+  align-self: baseline;
+}
+
+.cardCover {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: stretch;
+  float: left;
+  width: 100%;
+  opacity: 0;
+  text-align: left;
+  overflow: auto;
+  float: left;
+  flex-direction: column;
+  transition: opacity 0.4s ease;
+}
+
+.projectTile:hover .cardCover {
   opacity: 1;
   transition: opacity 1s ease;
 }
+
+#hidden {
+  flex-grow: 0.00001;
+  max-width: 0px;
+}
+
+/* @keyframes toHidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+} */
