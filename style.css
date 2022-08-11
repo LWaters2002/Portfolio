@@ -147,8 +147,8 @@ p {
 button {
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 3em;
+  font-weight: 500;
+  font-size: 2em;
   background: none;
   border: 0px;
   padding: 40px;
@@ -160,8 +160,14 @@ button {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 1.5em;
+  }
+}
+
 button:hover {
-  border-bottom: 16px solid currentColor;
+  border-bottom: 8px solid currentColor;
   border-color: #7d3542;
 }
 
@@ -170,7 +176,7 @@ button:hover {
 }
 
 #buttonSelected {
-  border-bottom: 16px solid currentColor;
+  border-bottom: 8px solid currentColor;
   border-color: #632430;
 }
 
@@ -179,9 +185,14 @@ button:hover {
   margin-right: auto;
   height: fit-content;
   background-color: #a63d40;
+  justify-content: center;
   text-align: center;
-  min-width: fit-content;
   border-radius: 40px;
+  max-width: fit-content;
+}
+.portfolio h1 {
+  font-size: 400%;
+  letter-spacing: 0px;
 }
 
 .portfolioGrid {
@@ -204,9 +215,16 @@ button:hover {
   position: relative;
   width: 28%;
   height: fit-content;
+  min-width: 240px;
   max-width: 312px;
   transition: transform, flex-grow, position, filter 0.4s, 1s, 1s, 0.4s;
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolioGrid {
+    width: 400px;
+  }
 }
 
 .projectTile img {
@@ -288,6 +306,7 @@ button:hover {
 
 #hidden {
   flex-grow: 0.00001;
+  min-width: 0px;
   max-width: 0px;
 }
 
