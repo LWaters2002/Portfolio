@@ -5,8 +5,6 @@
   overflow: hidden;
   overflow-x: hidden;
   background-color: #e9b872;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .nav_item {
@@ -40,6 +38,7 @@
   margin: 0%;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.8em;
 }
 
 #navbar a :hover {

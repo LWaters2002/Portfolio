@@ -29,10 +29,9 @@ iframe {
   margin-top: 80px;
   gap: 60px;
   position: relative;
+  justify-content: center;
   display: flex;
   width: 100%;
-  height: 600px;
-  overflow: hidden;
   filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
 }
 
@@ -41,19 +40,21 @@ iframe {
   background-color: #632430;
   text-align: left;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 0px;
   border-radius: 20px;
   padding-right: 10px;
 }
 
 .textBox h2 {
   font-weight: 600;
+  font-size: 3em;
+  line-height: 0.9em;
 }
 
 .textBox p {
   margin-top: -20px;
   margin-left: 20px;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 #cont {
@@ -68,19 +69,21 @@ iframe {
 
 .features {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
 .featureTile {
   display: flex;
   height: 500px;
+  max-width: 1080px;
   padding: 20px;
   background-color: #632430;
   border-radius: 20px;
   overflow: hidden;
-
-  gap: 10px;
+  gap: 40px;
   text-align: left;
   filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
 }
@@ -89,22 +92,26 @@ iframe {
   margin: 0px;
   margin-left: 20px;
   letter-spacing: -1px;
+  line-height: 50px;
   font-weight: 500;
 }
 
 .featureTile p {
   padding-left: 20px;
-  margin-top: -10px;
-  font-size: 2em;
+  margin-top: 5px;
+  font-size: 1.5em;
 }
 
 .featureTile .player {
+  display: block;
+  margin: auto;
+  text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 0px;
+  aspect-ratio: 16/9;
   z-index: 1;
-  height: 400px;
-  aspect-ratio: 1;
+  align-self: flex-end;
 }
 
 .gallery {
@@ -120,12 +127,17 @@ iframe {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:20px;
+  gap: 5px;
+  margin: -30px;
+  padding: 20px;
+  border-radius: 20px;
   justify-content: center;
+  background-color: rgba(23, 13, 23, 1);
 }
 
 .galleryFlex img {
   height: 20vw;
-  object-fit:contain;
+  object-fit: contain;
   flex-shrink: 1;
+  border-radius: 10px;
 }
