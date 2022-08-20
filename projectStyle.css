@@ -77,7 +77,6 @@ iframe {
 
 .featureTile {
   display: flex;
-  height: 500px;
   max-width: 1080px;
   padding: 20px;
   background-color: #632430;

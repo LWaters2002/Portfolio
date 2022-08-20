@@ -10,11 +10,17 @@ html {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+}
+
 body {
   margin: 0px;
   border: 0px;
   padding: 10px;
-  background-color: #0c070c;
+  background-color: #1e121e;
 }
 
 h1 {
@@ -44,7 +50,7 @@ h4 {
 }
 
 h3 {
-  color: #a63d40;
+  color: #d33439;
   font-size: 35px;
   letter-spacing: -1px;
   font-family: "Inter", sans-serif;
@@ -82,10 +88,11 @@ p {
 .slideArea {
   display: grid;
   margin: -10px -10px;
+  height: 800px;
 }
 
 #ImageSlide {
-  filter: brightness(50%) blur(1px);
+  filter: brightness(40%);
   grid-column: 1;
   grid-row: 1;
   overflow: hidden;
@@ -97,8 +104,8 @@ p {
 .imageReel {
   height: 90%;
   max-height: 1024px;
-  /* width: 768px;
-  object-fit: none; */
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .yellowBar {
@@ -110,40 +117,49 @@ p {
 }
 
 .aboutMe {
-  display: grid;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
   margin-bottom: 200px;
   gap: 30px;
+  max-width: 1080px;
 }
 
-#aboutMeText {
-  grid-row: 1;
-  grid-column: 1;
-  text-align: left;
-}
-#aboutMeTitle {
+.aboutMe h3 {
   font-size: 4em;
   margin-top: -20px;
   margin-bottom: -20px;
 }
 
-#aboutMeP {
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  letter-spacing: 1px;
+.aboutMe p {
+  font-size: 1.4em;
 }
 
 #personalImage {
   grid-row: 1;
   grid-column: 2;
-  width: 100%;
+  width: 75%;
+  max-width: 512px;
+  margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  .aboutMe h3 {
+    font-size: 2em;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
+  .aboutMe p {
+    font-size: 1em;
+  }
+
+  #personImage {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
 button {
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -190,9 +206,17 @@ button:hover {
   border-radius: 40px;
   max-width: fit-content;
 }
+
 .portfolio h1 {
-  font-size: 400%;
+  font-size: 5em;
   letter-spacing: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio h1 {
+    font-size: 3em;
+    letter-spacing: 0px;
+  }
 }
 
 .portfolioGrid {
@@ -200,13 +224,12 @@ button:hover {
   flex-direction: row;
   height: fit-content;
   background-color: #632430;
-  padding-bottom: 200px;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 40px;
   align-content: flex-start;
   border-radius: 40px;
-  min-height: 1200px;
+  min-height: 900px;
 }
 
 .projectTile {
@@ -223,7 +246,17 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
   .portfolioGrid {
-    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .projectTile {
+    padding: 20px 0px;
+    vertical-align: top;
   }
 }
 
@@ -232,6 +265,7 @@ button:hover {
   display: inline-block;
   aspect-ratio: 9/14;
   width: 100%;
+  max-width: 80vw;
 
   background-color: white;
   object-fit: cover;
