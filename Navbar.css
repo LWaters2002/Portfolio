@@ -1,44 +1,35 @@
 /* Style the navbar */
 #navbar {
   display: block;
-  margin: -10px -10px;
+  margin: -20px -10px;
   overflow: hidden;
   overflow-x: hidden;
   background-color: #e9b872;
 }
 
 .nav_item {
-  margin: 0px;
-  padding: 6px;
-  margin-right: 20px;
+  display: inline;
+  padding: 0px 20px;
   color: #170d17;
-  float: right;
-}
-
-#nav_titleName {
-  margin: 0px;
-  padding: 6px;
-  margin-left: 20px;
-  color: #170d17;
-  float: left;
 }
 
 #navgroup {
   display: block;
-  justify-content: space-evenly;
-  float: right;
-  width: fit-content;
+  text-align: center;
+  background-color: #f5bf42;
+  margin: auto auto;
+  width: 500px;
 }
 /* Navbar links */
 #navbar a {
   display: inline;
   color: #000000;
   text-align: center;
-  padding: 4px;
+  padding: 2px;
   margin: 0%;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.8em;
+  font-weight: 400;
+  font-size: 0.6em;
 }
 
 #navbar a :hover {
@@ -59,7 +50,7 @@
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 /* Page content */
@@ -76,5 +67,5 @@
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 32px;
 }

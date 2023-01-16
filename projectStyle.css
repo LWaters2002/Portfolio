@@ -12,9 +12,15 @@ body {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 10px;
   z-index: 1;
-  width: 100%;
+  width: 80%;
+
+}
+
+.main
+{
+ max-width: 1080px;
 }
 
 iframe {
@@ -41,20 +47,20 @@ iframe {
   text-align: left;
   width: 100%;
   padding-left: 0px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-right: 10px;
 }
 
 .textBox h2 {
   font-weight: 600;
-  font-size: 3em;
-  line-height: 0.9em;
+  font-size: 1.5em;
+  line-height: 1em;
 }
 
 .textBox p {
   margin-top: -20px;
   margin-left: 20px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 #cont {
@@ -70,35 +76,42 @@ iframe {
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 10px;
 }
 
 .featureTile {
   display: flex;
-  max-width: 1080px;
-  padding: 20px;
-  background-color: #632430;
-  border-radius: 20px;
+  width: 42%;
+  padding: 15px;
+  background-color: rgba(23, 13, 23, 1);
+  border-radius: 10px;
   overflow: hidden;
-  gap: 40px;
   text-align: left;
   filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
+}
+
+.featureTile:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .featureTile h2 {
   margin: 0px;
   margin-left: 20px;
+
   letter-spacing: -1px;
-  line-height: 50px;
+  line-height: 20px;
   font-weight: 500;
+  font-size: 1.5em;
 }
 
 .featureTile p {
   padding-left: 20px;
   margin-top: 5px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .featureTile .player {
