@@ -151,7 +151,7 @@ p {
   width: 35%;
   max-width: 512px;
   margin-bottom: 40px;
-  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.475));
+  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.3));
 }
 
 @media only screen and (max-width: 600px) {
@@ -185,6 +185,8 @@ button {
   transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-sizing: border-box;
   border-color: #a63d40;
+  background-color: #d33439;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -222,6 +224,7 @@ button:hover {
 .portfolio h1 {
   font-size: 5em;
   letter-spacing: 0px;
+  filter: drop-shadow(0px 5px rgba(0, 0, 0, 0.3));
 }
 
 @media only screen and (max-width: 600px) {
