@@ -4,32 +4,31 @@
   margin: -20px -10px;
   overflow: hidden;
   overflow-x: hidden;
-  background-color: #e9b872;
+  background-color: #ffffff32;
 }
 
 .nav_item {
   display: inline;
-  padding: 0px 20px;
-  color: #170d17;
+  padding: 0px 10px;
 }
 
 #navgroup {
   display: block;
   text-align: center;
-  background-color: #f5bf42;
   margin: auto auto;
   width: 500px;
 }
 /* Navbar links */
 #navbar a {
   display: inline;
-  color: #000000;
+  color: #FFF;
   text-align: center;
   padding: 2px;
   margin: 0%;
+  font-family: "Inter";
   text-decoration: none;
   font-weight: 400;
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 #navbar a :hover {
