@@ -1,11 +1,7 @@
+@import "/Colours.css";
+
 body {
-  background: rgb(23, 13, 23);
-  background: linear-gradient(
-    180deg,
-    rgba(23, 13, 23, 1) 10%,
-    rgba(99, 36, 48, 1) 40%,
-    rgba(166, 61, 64, 1) 100%
-  );
+  background: var(--c_teritary);
 }
 
 .player {
@@ -18,9 +14,8 @@ body {
 
 }
 
-.main
-{
- max-width: 1080px;
+.main {
+  max-width: 1080px;
 }
 
 iframe {
@@ -43,7 +38,7 @@ iframe {
 
 .textBox {
   display: inline;
-  background-color: #632430;
+  background-color: var(--c_primary);
   text-align: left;
   width: 100%;
   padding-left: 0px;
@@ -75,43 +70,44 @@ iframe {
 
 .features {
   display: flex;
-  justify-content: center;
-  align-items: left;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  gap: 100px;
+  flex: 50%;
+}
+
+.feature-card {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: block;
+  width: 80%;
 }
 
 .featureTile {
-  display: flex;
-  width: 42%;
-  padding: 15px;
-  background-color: rgba(23, 13, 23, 1);
-  border-radius: 10px;
+  width: 20vw;
+  padding : .75em;
+  padding-right: 2em;
+  margin: 0px;
+  background-color: var(--c_primary);
+  border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
+  filter: drop-shadow(0px 4px 0px var(--c_secondary));
 }
 
-.featureTile:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .featureTile h2 {
   margin: 0px;
-  margin-left: 20px;
-
   letter-spacing: -1px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
 .featureTile p {
-  padding-left: 20px;
   margin-top: 5px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .featureTile .player {
@@ -128,7 +124,7 @@ iframe {
 
 .gallery {
   margin-top: 100px;
-  background-color: #632430;
+  background-color: var(--c_primary);
   min-height: 1000px;
   border-radius: 20px;
   filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));

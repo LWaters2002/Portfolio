@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="stylesheet" href="/Navbar.css" />
       <nav id = "navbar">
         <div id="navgroup">
           <h3 class="nav_item">
