@@ -1,125 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/Navbar.css" />
-    <link rel="stylesheet" href="/projectStyle.css" />
-    <script src="scriptSrc.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Liam Waters - Totally Normal Farming Game</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="navgroup">
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">HOME</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="/index.html#portfolio" style="text-decoration: none">PORTFOLIO</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="experiments.html" style="text-decoration: none">EXPERIMENTS</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="contact.html" style="text-decoration: none">CONTACT</a>
-        </h3>
-      </div>
-    </nav>
-    
-    <!-- Main -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/projectStyle.css" />
 
-    <div class="main">
-      <h1 style="padding-top: 40px; font-weight: 700">TNFG</h1>
-      <h2 style="margin-top: -60px">Collaborative Project</h2>
-      <iframe
-        class="player"
-        type="text/html"
-        width="640"
-        height="360"
-        src="https://www.youtube.com/embed/bhryziFnDio?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-        frameborder="0"
-      ></iframe>
+  <script src="/ProjectComponents.js"></script>
+  <script src="/Components.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+  </style>
 
-      <div class="container">
-        <div class="textBox">
-          <h2>Description</h2>
+  <title>Liam Waters - Totally Normal Farming Game</title>
+</head>
+
+<body>
+  <header-bar></header-bar>
+
+  <!-- Main -->
+
+  <div class="main">
+
+    <div class="features">
+
+
+
+      <!--TILE_START-->
+      <div class="featureTile">
+        <div style="width: 100%; margin: 10px">
+          <div style="width: 100%; margin: 10px">
+            <!--Player Or Image-->
+            <div class="player">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
+                title="YouTube video player" frameborder="0" autoplay="0"
+                allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h2>Gun System</h2>
           <p>
-            Totally normal farming game is a student collaborative project with
-            a team of 16+, where I took the role of tech lead. Where the game
-            itself is a farming game, with an arcade-shooter twist.
+            A designer friendly weapon system that allows for any attribute to
+            be customised easily, the system is built around polymorphism and
+            inheritance to re-use code optimally, for example weapon variants
+            can easily be made such as a charged gun or burst rifle.
           </p>
         </div>
-
-        <div class="textBox">
-          <div id="col11">
-            <div id="cont">
-              <h2>Software</h2>
-              <p>Unreal Engine, Blender, 3DS Max</p>
-            </div>
-
-            <div id="cont">
-              <h2 id="subHalf">Skills/Topics Explored</h2>
-              <p>
-                Blueprint, Unreal Animation System, UMG, JIRA, Task Assignment
-                and Project Management
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div class="featuresWorked">
-        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 8em">
-          FEATURES
-        </h1>
-        <h2 style="font-size: 4.5em; margin-top: -69px; font-weight: 600">
-          WORKED ON
-        </h2>
-      </div>
-
-      <div class="features">
-        <!--TILE_START-->
-        <div class="featureTile">
+      <!--TILE_END-->
+      <!--TILE_START-->
+      <div class="featureTile">
+        <div style="width: 100%; margin: 10px">
           <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <div class="player">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  autoplay="0"
-                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <h2>Gun System</h2>
-            <p>
-              A designer friendly weapon system that allows for any attribute to
-              be customised easily, the system is built around polymorphism and
-              inheritance to re-use code optimally, for example weapon variants
-              can easily be made such as a charged gun or burst rifle.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <!-- <div class="player">
+            <!--Player Or Image-->
+            <!-- <div class="player">
                 <iframe
                   width="560"
                   height="315"
@@ -131,105 +68,82 @@
                   allowfullscreen
                 ></iframe>
               </div> -->
-            </div>
-            <h2>Team Lead</h2>
-            <p>
-              During this project I was tech lead, which meant communicating
-              between different disciplines to request and deliver different
-              ideas, mechanics and features. Furthermore this led me to organise
-              and plan tasks around individuals at different skill levels, and
-              utilise a good team workflow through JIRA.
-              <br />
-              <br />This position allowed me to teach juniors and seniors more
-              about unreal, proper workflow as well as proper conventions when
-              it comes to working in groups.
-            </p>
           </div>
+          <h2>Team Lead</h2>
+          <p>
+            During this project I was tech lead, which meant communicating
+            between different disciplines to request and deliver different
+            ideas, mechanics and features. Furthermore this led me to organise
+            and plan tasks around individuals at different skill levels, and
+            utilise a good team workflow through JIRA.
+            <br />
+            <br />This position allowed me to teach juniors and seniors more
+            about unreal, proper workflow as well as proper conventions when
+            it comes to working in groups.
+          </p>
         </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <!-- <div class="player">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  autoplay="0"
-                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div> -->
-            </div>
-            <h2>Scythe</h2>
-            <p>
-              A fully parameterized scythe that acts as a weapon and harvesting
-              tool, that has a special mechanic where bonus damage and bonus
-              harvesting is done during a perfectly timed window.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <div class="player">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/ILC29aSBXp4?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  autoplay="0"
-                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <h2>Build System</h2>
-            <p>
-              An alternative controller for the player that allows them to build
-              and upgrade structures through a world-space context driven menu.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <!-- <div class="player">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  autoplay="0"
-                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div> -->
-            </div>
-            <h2>Enemy Feedback</h2>
-            <p>
-              A set of game feel options regarding enemies, such as a custom hit
-              flash material, knockback, timeline driven death animations and
-              sound effects.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
       </div>
+      <!--TILE_END-->
+      <!--TILE_START-->
+      <div class="featureTile">
+        <div style="width: 100%; margin: 10px">
+          <div style="width: 100%; margin: 10px">
+            <!--Player Or Image-->
+            <!-- <div class="player">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  autoplay="0"
+                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div> -->  
+          </div>
+          <h2>Scythe</h2>
+          <p>
+            A fully parameterized scythe that acts as a weapon and harvesting
+            tool, that has a special mechanic where bonus damage and bonus
+            harvesting is done during a perfectly timed window.
+          </p>
+        </div>
+      </div>
+      <!--TILE_END-->
+      <!--TILE_START-->
 
-      <!-- <div class="gallery">
+      <!--TILE_END-->
+      <!--TILE_START-->
+      <div class="featureTile">
+        <div style="width: 100%; margin: 10px">
+          <div style="width: 100%; margin: 10px">
+            <!--Player Or Image-->
+            <!-- <div class="player">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/AIhlfd9A1sk?autoplay=0&modestbranding=1&controls=2&showinfo=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  autoplay="0"
+                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div> -->
+          </div>
+          <h2>Enemy Feedback</h2>
+          <p>
+            A set of game feel options regarding enemies, such as a custom hit
+            flash material, knockback, timeline driven death animations and
+            sound effects.
+          </p>
+        </div>
+      </div>
+      <!--TILE_END-->
+    </div>
+
+    <!-- <div class="gallery">
         <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
           GALLERY
         </h1>
@@ -238,6 +152,7 @@
           <img src="./PortfolioImages/HyeCover.PNG" alt="" />
         </div>
       </div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

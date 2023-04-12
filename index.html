@@ -1,180 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <script src="scriptSrc.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Liam Water's Portfolio</title>
-  </head>
-  <body>
-    <nav id="navbar">
-      <div id="navgroup">
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">HOME</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="#portfolio" style="text-decoration: none">PORTFOLIO</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="experiments.html" style="text-decoration: none">EXPERIMENTS</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">CONTACT</a>
-        </h3>
-      </div>
-    </nav>
-    <div class="yellowBar"></div>
-    <div class="main">
-      <div class="aboutMe">
-        <img
-        src="./PortfolioImages/Personal_Image.png"
-        id="personalImage"
-        alt=""
-      />
-        <div id="aboutMeText">
-          <h4>Staffordshire University 2020-2023</h4>
-          <h5>Bsc Computer Games Design and Programming</h5>
-          <h1></h1>
-          <p>
-            I’m Liam, a gameplay programmer that wants to sink their teeth into anything games; 
-            I love the synergy of different crafts from music to programming, and the depth these crafts offer.
-            such as algorithms, mathetatics and theory.
-            
-          </p>
-        </div>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <script src="scriptSrc.js"></script>
+  <script src="Components.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+  </style>
 
-      </div>
-
-      <div class="portfolio" id = "portfolio">
-        <h1>PROJECTS</h1>
-        <div id="proffesion"></div>
-        <button class="portfolioButtons" value="Educational">
-          EDUCATIONAL
-        </button>
-        <button class="portfolioButtons" value="Personal">PERSONAL</button>
-        <br />
-        <button class="portfolioButtons" value="Unity">UNITY</button>
-        <button class="portfolioButtons" value="Unreal">UNREAL</button>
-        <button class="portfolioButtons" value="C#">C#</button>
-        <button class="portfolioButtons" value="C++">C++</button>
-
-        <div class="portfolioGrid">
-
-          <!-- TILE_START --> 
-
-          <div class="projectTile" tags = "Unity, C#, Educational, Personal">
-            <a href="ProjectPages/project-hye.html">
-              <img src="PortfolioImages/hye_cover.png" alt="" />
-
-            <div class="cardCover">
-              <h3>HYE</h3>
-              <p>Hye is a third person shooter with intrinsic puzzle elements</p>
-              <h5>Tags: Unity, C#, AI</h5>
-            </div>
-          </a>
-          </div>
-          <!-- TILE_END --> 
-
-          <!-- TILE_START --> 
-          <div class="projectTile" tags = "Unity, Educational, C#">
-            <a href="ProjectPages/project-FYP.html">
-              <img src="PortfolioImages/fyp_monsterRanger_cover.png" alt="" />
-
-            <div class="cardCover" >
-              <h3>[FYP] Monster Ranger</h3>
-              <p>This is a final year project that focuses on AI hybridisation and application in a monster hunter style game</p>
-              <h5>Tags: Unity, Educational, C#, AI, Tools, Research</h5>
-            </div>
-          </a>
-          </div>
-          <!-- TILE_END --> 
-
-          <!-- TILE_START --> 
-          <div class="projectTile" tags = "Unreal, Educational, Blueprint">
-            <a href="ProjectPages/project-TNFG.html">
-              <img src="PortfolioImages/farming_cover.png" alt="" />
-
-            <div class="cardCover" >
-              <h3>Totally Normal Farming Game</h3>
-              <p>A project made with a student team of 16+, where I took the role of technical lead, The project itself being a farming game with an arcade twist.
-              </p>
-              <h5>Tags: Unreal, Educational, Blueprint, Collaborative, Project Management</h5>
-            </div>
-          </a>
-          </div>
-          <!-- TILE_END --> 
-
-          <!-- TILE_START --> 
-          <div class="projectTile" tags = "Unreal, Educational, C++, Blueprint">
-            <a href="ProjectPages/project-SoulsNRolls.html">
-              <img src="PortfolioImages/soulsNRolls_cover.png" alt="" />
-
-            <div class="cardCover" >
-              <h3>Souls N' Rolls</h3>
-              <p> Adding DnD elements to a non-turn based RPG, this project uses both C++ and blueprint to achieve the best balance of iteration and implementation</p>
-              <h5>Tags: Unreal, Educational, C++, Blueprint, Tools, WIP</h5>
-            </div>
-          </a>
-          </div>
-          <!-- TILE_END --> 
-
-          <!-- TILE_START --> 
-          <div class="projectTile" tags = "Unreal, Educational,C++, Blueprint, UMG">
-            <a href="ProjectPages/project-Staffsverse.html">
-              <img src="PortfolioImages/staffsverse_cover.png" alt="" />
-
-            <div class="cardCover">
-              <h3>Staffsverse</h3>
-              <p>Staffsverse is an interactive environment intended for new and international students.</p>
-              <h5>Tags: Unreal, Blueprint, UMG, C++, Project Management</h5>
-            </div>
-
-          </a>
-          </div>
-          <!-- TILE_END --> 
-          
-          <!-- TILE_START --> 
-          <div class="projectTile" id = "" tags = "Unreal, Educational, Blueprint, UMG">
-            <a href="ProjectPages/project-MobaUI.html">
-              <img src="PortfolioImages/mobaUI_cover.png" alt="" />
-
-            <div class="cardCover">
-              <h3>MOBA UI</h3>
-              <p>UI Design, Creation and implementation for a MOBA game.</p>
-              <h5>Tags: Unreal, Blueprint, UMG, UI Design, UI Programming</h5>
-            </div>
-          </a>
-          </div>
-          <!-- TILE_END --> 
-
-           <!-- TILE_START --> 
-
-            <div class="projectTile" tags = "Unreal, Educational, Blueprint, UMG">
-              <a href="ProjectPages/project-HowWeRust.html">
-                <img src="PortfolioImages/bleak_cover.png" alt="" />
   
-              <div class="cardCover" >
-                <h3>How We Rust</h3>
-                <p>How We Rust is an atmospheric puzzle game, made in the collaborative games module</p>
-                <h5>Tags: Unreal, Blueprint, UMG, AI, Animation, Inverse Kinematics</h5>
-              </div>
-            </a>
-            </div>
-            <!-- TILE_END --> 
 
-        </div>
-          </div>
+  <title>Liam Water's Portfolio</title>
+</head>
 
-        </div>
+<body>
+  <header-bar></header-bar>
+  <div class="yellowBar"></div>
+  <div class="main">
+    <div class="aboutMe">
+      <img src="./PortfolioImages/Personal_Image.png" id="personalImage" alt="" />
+      <div id="aboutMeText">
+        <h4>Staffordshire University 2020-2023</h4>
+        <h5>Bsc Computer Games Design and Programming</h5>
+        <h1></h1>
+        <p>
+          I’m Liam, a gameplay programmer that wants to sink their teeth into anything games;
+          I love the synergy of different crafts from music to programming, and the depth these crafts offer.
+          such as algorithms, mathetatics and theory.
+
+        </p>
+      </div>
+
+    </div>
+
+    <div class="portfolio" id="portfolio">
+      <h1>PROJECTS</h1>
+      <div id="proffesion"></div>
+      <button class="portfolioButtons" value="Educational">
+        EDUCATIONAL
+      </button>
+      <button class="portfolioButtons" value="Personal">PERSONAL</button>
+      <br />
+      <button class="portfolioButtons" value="Unity">UNITY</button>
+      <button class="portfolioButtons" value="Unreal">UNREAL</button>
+      <button class="portfolioButtons" value="C#">C#</button>
+      <button class="portfolioButtons" value="C++">C++</button>
+
+      <div class="portfolioGrid">
+
+        <project-card title="Hye" image="PortfolioImages/hye_cover.png"
+          description="Hye is a third person shooter with intrinsic puzzle elements" link="ProjectPages/project-hye.html"
+          sortTags="Unity, C#, Educational, Personal">
+        </project-card>
+
+        <project-card title="[FYP] Monster Ranger" image="PortfolioImages/fyp_monsterRanger_cover.png" description="This is a final year project that focuses on AI hybridisation and application in a monster hunter style
+          game" link="ProjectPages/project-FYP.html" sortTags="Unity, Educational, C#">
+        </project-card>
+
+        <project-card title="Totally Normal Farming Game" image="PortfolioImages/farming_cover.png" description="A project made with a student team of 16+, where I took the role of technical lead, The project itself
+          being a farming game with an arcade twist." link="ProjectPages/project-TNFG.html"
+          sortTags="Unreal, Educational, Blueprint, Collaborative, Project Management">
+        </project-card>
+
+        <project-card title="Souls n' Rolls" image="PortfolioImages/soulsNRolls_cover.png" description="Adding DnD elements to a non-turn based RPG, this project uses both C++ and blueprint to achieve the
+        best balance of iteration and implementation" link="ProjectPages/project-SoulsNRolls.html"
+          sortTags="Unreal, Educational, C++, Blueprint, Tools, WIP">
+        </project-card>
+
+        <project-card title="Staffsverse" image="PortfolioImages/staffsverse_cover.png"
+          description="Staffsverse is an interactive environment intended for new and international students."
+          link="ProjectPages/project-Staffsverse.html" sortTags=" Unreal, Blueprint, UMG, C++, Project Management">
+        </project-card>
+
+        <project-card title="Moba UI" image="PortfolioImages/mobaUI_cover.png"
+          description="UI Design, Creation and implementation for a MOBA game." link="ProjectPages/project-MobaUI.html"
+          sortTags="Unreal, Blueprint, UMG, UI Design, UI Programming">
+        </project-card>
+
+        <project-card title="How We Rust" image="PortfolioImages/bleak_cover.png"
+          description="How We Rust is an atmospheric puzzle game, made in the collaborative games module"
+          link="ProjectPages/project-HowWeRust.html"
+          sortTags="Unreal, Blueprint, UMG, AI, Animation, Inverse Kinematics">
+        </project-card>
+
+
+
+
       </div>
     </div>
-  </body>
+
+  </div>
+  </div>
+  </div>
+</body>
+
 </html>
