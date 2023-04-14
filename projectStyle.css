@@ -149,8 +149,8 @@ iframe {
 }
 
 .galleryFlex img {
-  height: 20vw;
   object-fit: contain;
+  max-width: 48%;
   flex-shrink: 1;
   border-radius: 10px;
 }

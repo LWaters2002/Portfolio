@@ -1,230 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/Navbar.css" />
-    <link rel="stylesheet" href="/projectStyle.css" />
-    <script src="scriptSrc.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Liam Waters - FYP</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="navgroup">
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">HOME</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="/index.html#portfolio" style="text-decoration: none"
-            >PORTFOLIO</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="experiments.html" style="text-decoration: none"
-            >EXPERIMENTS</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="contact.html" style="text-decoration: none">CONTACT</a>
-        </h3>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/Navbar.css" />
+  <link rel="stylesheet" href="/projectStyle.css" />
+  <script src="scriptSrc.js"></script>
+  <script src="/Components.js"></script>
+  <script src="/ProjectComponents.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+  </style>
 
-    <!-- Main -->
+  <title>Liam Waters - FYP</title>
+  <header-bar></header-bar>
+</head>
 
-    <div class="main">
-      <h1
-        style="
-          padding-top: 40px;
-          font-weight: 700;
-          line-height: 0.8em;
-          padding-bottom: 0.5em;
-        "
-      >
-        Monster Ranger
-      </h1>
-      <h2 style="margin-top: -60px">Monster Hunting with a Twist</h2>
-      <iframe
-        class="player"
-        type="text/html"
-        width="640"
-        height="360"
-        src=""
-        frameborder="0"
-      ></iframe>
+<body>
 
-      <div class="container">
-        <div class="textBox">
-          <h2>Description</h2>
-          <p>
-            Monster Ranger is a vertical slice, featuring a unique AI
-            implementation which is the hybridisation of both utility AI and
-            Hierachial finite state machines. Furthermore this AI is used to
-            create a twist on the monster hunting genre.
-          </p>
-        </div>
+  <div class="main">
 
-        <div class="textBox">
-          <div id="col11">
-            <div id="cont">
-              <h2>Software</h2>
-              <p>Unity, Blender, Photoshop, Machinations, Trello, Notion</p>
-            </div>
+    <project-intro title="Monster Ranger" tagline="Monster hunting with a twist" video=""></project-intro>
+    <project-description description="Monster Ranger is a vertical slice, featuring a unique AI
+      implementation which is the hybridisation of both utility AI and
+      Hierachial finite state machines. Furthermore this AI is used to
+      create a twist on the monster hunting genre." software="Unity, Blender, Photoshop, Machinations, Trello, Notion"
+      skills="AI techniques, Bosses, Ludonarrative Resonance and
+      non-traditional gameplay mechanics."></project-description>
 
-            <div id="cont">
-              <h2 id="subHalf">Skills/Topics Explored</h2>
-              <p>
-                AI techniques, Bosses, Ludonarrative Resonance and
-                non-traditional gameplay mechanics.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <project-features>
 
-      <div class="featuresWorked">
-        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 8em">
-          FEATURES
-        </h1>
-        <h2 style="font-size: 4.5em; margin-top: -69px; font-weight: 600">
-          WORKED ON
-        </h2>
-      </div>
+      <feature-card title="PID Controller" description="a Proportional-Integral-Derivative controller used for moving
+      gameobjects in natural ways, whilst giving enough control to make
+      intended behaviours." image=""></feature-card>
 
-      <div class="features">
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-            </div>
-            <h2>PID Controller</h2>
-            <p>
-              a Proportional-Integral-Derivative controller used for moving
-              gameobjects in natural ways, whilst giving enough control to make
-              intended behaviours.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
 
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-            </div>
-            <h2>HUSM - Hierachial Utility State Machine</h2>
-            <p>
-              A custom hybridised implementation of Utility AI and Hiearchial
-              Finite State Machine (HFSM), This implementation was created to
-              keep control whilst providing flexible and optimal decision
-              making.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
+      <feature-card title="HUSM - Hierachial Utility State Machine" description="A custom hybridised implementation of Utility AI and Hiearchial
+      Finite State Machine (HFSM), This implementation was created to
+      keep control whilst providing flexible and optimal decision
+      making." image=""></feature-card>
 
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-              <div class="player">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/wBqL8VrJqU4?autoplay=0&modestbranding=1&controls=2&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  autoplay="0"
-                  allow="accelerometer;clipboard-write; encrypted-media; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <h2>Movement [Wall Running etc.]</h2>
-            <p>
-              A fluid movement system featuring wall climbing, running and
-              dashing that is compatible with any environment.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
+      <feature-card title="Movement [Wall Running etc.]" description=" A fluid movement system featuring wall climbing, running and
+      dashing that is compatible with any environment." image=""></feature-card>
 
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-            </div>
-            <h2>The Monster</h2>
-            <p>
-              A complete monster, featuring
-              concept->design->Sculpting->Retop->Texturing->Animating->Implementing
-              AI System->Misc Systems. The monster is designed to feel natural
-              and belonging to the world whilst complimenting existing gameplay
-              features.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
+      <feature-card title="The Monster" description="A complete monster, featuring
+      concept->design->Sculpting->Retop->Texturing->Animating->Implementing
+      AI System->Misc Systems. The monster is designed to feel natural
+      and belonging to the world whilst complimenting existing gameplay
+      features." image=""></feature-card>
 
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-            </div>
-            <h2>AI Sensors</h2>
-            <p>
-              A series of senses/sensors (Sight, Sound and Smell) for AI agents
-              to gather different quantities and qualities of environmental
-              information.
-              With additional work put into to support debugging, for senses.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
+      <feature-card title="AI Sensors" description="A series of senses/sensors (Sight, Sound and Smell) for AI agents
+      to gather different quantities and qualities of environmental
+      information.
+      With additional work put into to support debugging, for senses." image=""></feature-card>
 
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px">
-              <!--Player Or Image-->
-            </div>
-            <h2>Tracking</h2>
-            <p>
-              A system where a monster can leave tracks, contextual clues and
-              information about the monster. These tracks also feature intrinsic
-              minigames that give more information on perfect completion.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-      </div>
+      <feature-card title="Tracking" description="A system where a monster can leave tracks, contextual clues and
+      information about the monster. These tracks also feature intrinsic
+      minigames that give more information on perfect completion." image=""></feature-card>
 
-      <div class="gallery">
-        <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
-          GALLERY
-        </h1>
+    </project-features>
 
-        <div class="galleryFlex">
-          <img src="/PortfolioImages/FYPImages/fyp_crystal.png" alt="" />
-          <img src="/PortfolioImages/FYPImages/fyp_poly.png" alt="" />
-          <img src="/PortfolioImages/FYPImages/fyp_pose.png" alt="" />
-          <img src="/PortfolioImages/FYPImages/fyp_rig.png" alt="" />
-          <img src="/PortfolioImages/FYPImages/fyp_senses.png" alt="" />
-        </div>
-      </div>
+  <div class="gallery">
+    <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
+      GALLERY
+    </h1>
+
+    <div class="galleryFlex">
+      <img src="/PortfolioImages/FYPImages/fyp_crystal.png" alt="" />
+      <img src="/PortfolioImages/FYPImages/fyp_poly.png" alt="" />
+      <img src="/PortfolioImages/FYPImages/fyp_pose.png" alt="" />
+      <img src="/PortfolioImages/FYPImages/fyp_rig.png" alt="" />
+      <img src="/PortfolioImages/FYPImages/fyp_senses.png" alt="" />
     </div>
-  </body>
+  </div>
+  </div>
+</body>
+
 </html>

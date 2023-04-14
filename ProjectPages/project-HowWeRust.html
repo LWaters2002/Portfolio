@@ -1,145 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/Navbar.css" />
-    <link rel="stylesheet" href="/projectStyle.css" />
-    <script src="scriptSrc.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Liam Waters - Hye</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="navgroup">
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">HOME</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="/index.html#portfolio" style="text-decoration: none"
-            >PORTFOLIO</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="experiments.html" style="text-decoration: none"
-            >EXPERIMENTS</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="contact.html" style="text-decoration: none">CONTACT</a>
-        </h3>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/Navbar.css" />
+  <link rel="stylesheet" href="/projectStyle.css" />
+  <script src="scriptSrc.js"></script>
+  <script src="/Components.js"></script>
+  <script src="/ProjectComponents.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+  </style>
 
-    <!-- Main -->
+  <title>Liam Waters - Hye</title>
+  <header-bar></header-bar>
+</head>
 
-    <div class="main">
-      <h1 style="padding-top: 40px; font-weight: 600; font-size: 7em">
-        HOW WE RUST
-      </h1>
-      <h2 style="margin-top: -60px">Collobarative Project</h2>
+<body>
 
-      <div class="container">
-        <div class="textBox">
-          <h2>Description</h2>
-          <p>
-            How We Rust is a thematic puzzle game including logic puzzles,
-            parkour and a dystopian sci-fi asthetic.
-          </p>
-        </div>
+  <!-- Main -->
 
-        <div class="textBox">
-          <div id="col11">
-            <div id="cont">
-              <h2>Software</h2>
-              <p>Unreal Engine, Blender, JIRA</p>
-            </div>
+  <div class="main">
 
-            <div id="cont">
-              <h2 id="subHalf">Skills/Topics Explored</h2>
-              <p>
-                JIRA, Project Management, Inverse Kinematics, Animation
-                Targeting and animation driven player movement.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <project-intro title="HOW WE RUST" tagline="Dystopian Sci-fi Puzzler" video="">
+    </project-intro>
 
-      <div class="featuresWorked">
-        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 8em">
-          FEATURES
-        </h1>
-        <h2 style="font-size: 4.5em; margin-top: -69px; font-weight: 600">
-          WORKED ON
-        </h2>
-      </div>
+    <project-description description="How We Rust is a thematic puzzle game including logic puzzles,
+      parkour and a dystopian sci-fi asthetic." software="Unreal Engine, Blender, JIRA" skills="JIRA, Project Management, Inverse Kinematics, Animation
+      Targeting and animation driven player movement."></project-description>
 
-      <div class="features">
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Parkour Locomotion</h2>
-            <p>
-              Player Vaulting, wall climbing and Ledge grab, all wrapped in a
-              custom character controller with additional features for sliding
-              and climbing ladders. Some of these features use root motion to
-              get accurate and great looking results.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Gravity Boots</h2>
-            <p>
-              Anti-Gravity Boots that stick the character to any nearby magnetic
-              surface, and attract and rotate the player towards it.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Push Pull</h2>
-            <p>
-              Actors in world can be pushed and pulled in different arrangements
-              to help solve puzzles furthermore Target IK's are used to attach
-              the actor's hands to push/pullables anchors.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Interaction and Power System</h2>
-            <p>
-              A system for interacting with the world, such as triggering levers
-              and picking up items. In addition the power system, can share and
-              distribute 'power' to acivate different outputs, this system can
-              use simple logic gates to create designer friendly logic for level
-              and puzzle design.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-      </div>
+    <project-features>
 
-      <!-- 
+      <feature-card title="Parkour Locomotion" description="Player Vaulting, wall climbing and Ledge grab, all wrapped in a
+      custom character controller with additional features for sliding
+      and climbing ladders. Some of these features use root motion to
+      get accurate and great looking results." image=""></feature-card>
+
+      <feature-card title="Gravity Boots" description="Anti-Gravity Boots that stick the character to any nearby magnetic
+      surface, and attract and rotate the player towards it." image=""></feature-card>
+
+      <feature-card title="Push Pull" description="Actors in world can be pushed and pulled in different arrangements
+      to help solve puzzles furthermore Target IK's are used to attach
+      the actor's hands to push/pullables anchors." image=""></feature-card>
+
+      <feature-card title="Interaction and Power System" description="A system for interacting with the world, such as triggering levers
+      and picking up items. In addition the power system, can share and
+      distribute 'power' to acivate different outputs, this system can
+      use simple logic gates to create designer friendly logic for level
+      and puzzle design." image=""></feature-card>
+
+    </project-features>
+
+    <!-- 
       <div class="gallery">
         <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
           GALLERY
@@ -149,6 +65,7 @@
           <img src="./PortfolioImages/HyeCover.PNG" alt="" />
         </div>
       </div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

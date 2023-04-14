@@ -1,148 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/Navbar.css" />
-    <link rel="stylesheet" href="/projectStyle.css" />
-    <script src="scriptSrc.js"></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Liam Waters - Souls N Rolls</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="navgroup">
-        <h3 class="nav_item">
-          <a href="index.html" style="text-decoration: none">HOME</a>
-        </h3>
-        <h3 class="nav_item">
-          <a href="/index.html#portfolio" style="text-decoration: none"
-            >PORTFOLIO</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="experiments.html" style="text-decoration: none"
-            >EXPERIMENTS</a
-          >
-        </h3>
-        <h3 class="nav_item">
-          <a href="contact.html" style="text-decoration: none">CONTACT</a>
-        </h3>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/Navbar.css" />
+  <link rel="stylesheet" href="/projectStyle.css" />
+  <script src="scriptSrc.js"></script>
+  <script src="/Components.js"></script>
+  <script src="/ProjectComponents.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+  </style>
 
-    <!-- Main -->
+  <title>Liam Waters - Souls N Rolls</title>
+  <header-bar></header-bar>
+</head>
 
-    <div class="main">
-      <h1 style="padding-top: 40px; font-weight: 700">Souls N' Rolls</h1>
-      <h2 style="margin-top: -60px">A project in technical design</h2>
+<body>
 
-      <div class="container">
-        <div class="textBox">
-          <h2>Description</h2>
-          <p>
-            A souls-like game utilising DND style stats, with systems
-            implemented in a balance of C++ and blueprint.
-          </p>
-        </div>
+  <!-- Main -->
 
-        <div class="textBox">
-          <div id="col11">
-            <div id="cont">
-              <h2>Software</h2>
-              <p>Unreal Engine, Rider, Photoshop, Machinations and Word</p>
-            </div>
+  <div class="main">
 
-            <div id="cont">
-              <h2 id="subHalf">Skills/Topics Explored</h2>
-              <p>
-                Unreal Engine, C++, Blueprint, Root Animation, UI design,
-                Technical Diagrams and documentation, Balancing.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <project-intro title="Souls N' Rolls" tagline="Souls like combat delivered through a DND esque package" video="">
+    </project-intro>
 
-      <div class="featuresWorked">
-        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 8em">
-          FEATURES
-        </h1>
-        <h2 style="font-size: 4.5em; margin-top: -69px; font-weight: 600">
-          WORKED ON
-        </h2>
-      </div>
+    <project-description description="A souls-like game utilising DND style stats, with systems
+    implemented in a balance of C++ and blueprint." software="Unreal Engine, Rider, Photoshop, Machinations and Word"
+      skills="Unreal Engine, C++, Blueprint, Root Animation, UI design,
+      Technical Diagrams and documentation, Balancing."></project-description>
 
-      <div class="features">
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Inventory System</h2>
-            <p>
-              A classic RPG style inventory system programmed created in C++
-              serialized and editable in blueprint for designers.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Quests and Objectives</h2>
-            <p>
-              A fully modular system for creating quests and objectives,
-              serializable in editor and can be created through unreal data
-              assets.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Enemy AI</h2>
-            <p>Darksouls style enemy AI using Unreal's blackboarding system.</p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Souls-Like Combat</h2>
-            <p>
-              Rolling, a bit of magic, and a lot of melee combat. A set of
-              systems for close quarters combat, with a focus on game feel.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-        <!--TILE_START-->
-        <div class="featureTile">
-          <div style="width: 100%; margin: 10px">
-            <div style="width: 100%; margin: 10px"></div>
-            <h2>Dialogue System</h2>
-            <p>
-              A modular dialogue system with branching dialogue trees as well as
-              the option to accept and finish quests, on top of accepting
-              rewards.
-            </p>
-          </div>
-        </div>
-        <!--TILE_END-->
-      </div>
+    <project-features>
+      <feature-card title="Inventory System" description="A classic RPG style inventory system programmed created in C++
+      serialized and editable in blueprint for designers." image=""></feature-card>
 
-      <!-- <div class="gallery">
+      <feature-card title="Quests and Objectives" description="A fully modular system for creating quests and objectives,
+      serializable in editor and can be created through unreal data
+      assets." image=""></feature-card>
+
+      <feature-card title="Enemy AI" description="Darksouls style enemy AI using Unreal's blackboarding system"
+        image=""></feature-card>
+
+      <feature-card title="Souls-Like Combat" description="Rolling, a bit of magic, and a lot of melee combat. A set of
+      systems for close quarters combat, with a focus on game feel." image=""></feature-card>
+
+      <feature-card title="Dialogue System" description="A modular dialogue system with branching dialogue trees as well as
+      the option to accept and finish quests, on top of accepting
+      rewards." image=""></feature-card>
+    </project-features>
+
+  <!-- <div class="gallery">
         <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
           GALLERY
         </h1>
@@ -151,6 +62,7 @@
           <img src="./PortfolioImages/HyeCover.PNG" alt="" />
         </div>
       </div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

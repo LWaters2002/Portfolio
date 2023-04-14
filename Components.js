@@ -18,10 +18,10 @@ class Header extends HTMLElement {
             <a href="/experiments.html" style="text-decoration: none">EXPERIMENTS</a>
           </h3>
           <h3 class="nav_item">
-            <a href="./contact.html" style="text-decoration: none">CONTACT</a>
+            <a href="/contact.html" style="text-decoration: none">CONTACT</a>
           </h3>
           <h3 class="nav_item">
-            <a href="./cv.html" style="text-decoration: none">CV</a>
+            <a href="/cv.html" style="text-decoration: none">CV</a>
           </h3>
         </div>
     </nav >
