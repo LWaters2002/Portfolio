@@ -12,7 +12,7 @@ class Header extends HTMLElement {
             <a href="/index.html" style="text-decoration: none">HOME</a>
           </h3>
           <h3 class="nav_item">
-            <a href="#portfolio" style="text-decoration: none">PORTFOLIO</a>
+            <a href="/index.html#portfolio" style="text-decoration: none">PORTFOLIO</a>
           </h3>
           <h3 class="nav_item">
             <a href="/experiments.html" style="text-decoration: none">EXPERIMENTS</a>

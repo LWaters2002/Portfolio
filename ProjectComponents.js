@@ -49,8 +49,7 @@ class FeatureCard extends HTMLElement {
     let description = this.attributes.description.value;
     let image = this.attributes.image.value;
 
-    {
-
+    setTimeout(() => {
       let start = `
   <div class="featureTile">
   <div style="width: 100%; margin: 10px">
@@ -70,25 +69,24 @@ class FeatureCard extends HTMLElement {
       let content = start;
       content += core;
 
-      this.CheckVideo();
+      content += this.CheckVideo();
 
       content += end;
 
       this.innerHTML = content;
-    }
-
+    })
   }
 
   CheckVideo() {
     if (this.hasAttribute("video")) {
       let video = this.attributes.video.value;
-      let videoBlock =
+      var videoBlock =
         `      <div style="width: 100%; margin: 10px">
     <div class="player">
       <iframe
         width="560"
         height="315"
-        src="${video}"
+        src="https://www.youtube.com/embed/${video}"
         title="YouTube video player"
         frameborder="0"
         autoplay="0"
@@ -98,9 +96,10 @@ class FeatureCard extends HTMLElement {
     </div>
   </div>`;
 
-      content += videoBlock;
+      return videoBlock;
     }
 
+    return "";
   }
 }
 
@@ -114,15 +113,16 @@ class ProjectIntro extends HTMLElement {
     let tagline = this.attributes.tagline.value;
     let video = this.attributes.video.value;
 
-    {
+    setTimeout(() => {
       this.innerHTML = `
     <h1 style="padding-top: 40px; font-weight: 700">${title}</h1>
     <h2 style="margin-top: -60px">${tagline}</h2>
     <iframe class="player" type="text/html" width="640" height="360"
-      src="${video}"
+      src="https://www.youtube.com/embed/${video}"
       frameborder="0"></iframe>
       `
-    }
+    })
+
   }
 }
 
@@ -133,7 +133,7 @@ class ProjectFeature extends HTMLElement {
 
   connectedCallback() {
 
-    setTimeout(()=>{ // Uses timeout to load DOM first
+    setTimeout(() => { // Uses timeout to load DOM first
       let content = this.innerHTML;
 
       let featuresWorked = `
@@ -147,7 +147,7 @@ class ProjectFeature extends HTMLElement {
         `
       featuresWorked += content;
       featuresWorked += '</div>';
-  
+
       this.innerHTML = featuresWorked;
     });
 
