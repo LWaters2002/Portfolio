@@ -9,16 +9,19 @@ class Header extends HTMLElement {
       <nav id = "navbar">
         <div id="navgroup">
           <h3 class="nav_item">
-            <a href="index.html" style="text-decoration: none">HOME</a>
+            <a href="/index.html" style="text-decoration: none">HOME</a>
           </h3>
           <h3 class="nav_item">
             <a href="#portfolio" style="text-decoration: none">PORTFOLIO</a>
           </h3>
           <h3 class="nav_item">
-            <a href="experiments.html" style="text-decoration: none">EXPERIMENTS</a>
+            <a href="/experiments.html" style="text-decoration: none">EXPERIMENTS</a>
           </h3>
           <h3 class="nav_item">
-            <a href="index.html" style="text-decoration: none">CONTACT</a>
+            <a href="./contact.html" style="text-decoration: none">CONTACT</a>
+          </h3>
+          <h3 class="nav_item">
+            <a href="./cv.html" style="text-decoration: none">CV</a>
           </h3>
         </div>
     </nav >
@@ -44,9 +47,9 @@ class ProjectCard extends HTMLElement {
         <img src="${image}" alt="" />
 
         <div class="cardCover">
-          <h4>${title}</h4>
+          <h5>${title}</h5>
           <p>${description}</p>
-          <h5>Tags: ${tags}</h5>
+          <h4>Tags: ${tags}</h4>
         </div>
       </a>
     </div>

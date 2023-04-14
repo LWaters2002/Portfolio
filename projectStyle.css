@@ -1,7 +1,10 @@
 @import "/Colours.css";
 
 body {
-  background: var(--c_teritary);
+  background-color: var(--c_teritary);
+  background-image: url("tile-detailed.png");
+  background-blend-mode: multiply;
+  background-size: 150px;
 }
 
 .player {
@@ -15,7 +18,7 @@ body {
 }
 
 .main {
-  max-width: 1080px;
+  width:60vw;
 }
 
 iframe {
@@ -39,6 +42,8 @@ iframe {
 .textBox {
   display: inline;
   background-color: var(--c_primary);
+  background-image: url("tile.png");
+  background-blend-mode: multiply;
   text-align: left;
   width: 100%;
   padding-left: 0px;
@@ -72,7 +77,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 20px;
   flex: 50%;
 }
 
@@ -85,7 +90,7 @@ iframe {
 }
 
 .featureTile {
-  width: 20vw;
+  width: 25vw;
   padding : .75em;
   padding-right: 2em;
   margin: 0px;

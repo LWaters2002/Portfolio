@@ -138,12 +138,9 @@ class ProjectFeature extends HTMLElement {
 
       let featuresWorked = `
       <div class="featuresWorked">
-        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 8em">
+        <h1 style="font-weight: 600; letter-spacing: 2px; font-size: 5vw">
           FEATURES
         </h1>
-        <h2 style="font-size: 4.5em; margin-top: -69px; font-weight: 600">
-          WORKED ON
-        </h2>
       </div>
   
       <div class="features">

@@ -1,5 +1,4 @@
-
-
+@import "/Colours.css";
 
 html {
   scroll-behavior: smooth !important;
@@ -23,7 +22,10 @@ body {
   margin: 0px;
   border: 0px;
   padding: 10px;
-  background-color: #24201e;
+  background-color: var(--c_teritary);
+  background-image: url("/tile-detailed.png");
+  background-blend-mode: multiply;
+  background-size: 150px;
 }
 
 h1 {
@@ -40,7 +42,6 @@ h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 4em;
-  letter-spacing: -px;
   margin: 20px;
 }
 
@@ -49,7 +50,6 @@ h4 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 2em;
-  line-height: 0%;
   margin: 20px;
 }
 
@@ -58,6 +58,7 @@ h5 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
+  z-index: 2;
   margin: 20px;
 }
 
@@ -147,6 +148,9 @@ p {
 
 .aboutMe p {
   font-size: 1.4em;
+  background-color: #000000a4;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 #personalImage {

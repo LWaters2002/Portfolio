@@ -1,10 +1,15 @@
+@import "/Colours.css";
+
 /* Style the navbar */
 #navbar {
   display: block;
-  margin: -20px -10px;
   overflow: hidden;
   overflow-x: hidden;
-  background-color: #ffffff32;
+  background-color: #000000de;
+  position: fixed;
+  top : -10px;
+  width: 100%;
+  z-index: 10;
 }
 
 .nav_item {
