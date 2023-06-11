@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/projectStyle.css" />
+
+    <script src="/Components.js"></script>
+    <script src="/ProjectComponents.js"></script>
+
+    <title>Liam Waters - AI Scripting</title>
+  </head>
+
+  <body>
+    <!-- Main -->
+    <header-bar></header-bar>
+
+    <div class="main">
+      <project-intro
+        title="AI Scripting"
+        tagline="Turn Based Auto Battler"
+        video="v1HQN2EU1Rk"
+      >
+      </project-intro>
+
+      <project-description
+        description="This project is an auto battler made in the style of the fire emblem / xcom games, utilising Utility System AI, to make AI decisions and create different unit types and behaviours."
+        software="Unity, Blender, Photoshop"
+        skills="Programming, 3D modelling, Animation"
+      ></project-description>
+
+      <project-features>
+        <feature-card
+          title="Archetypes"
+          description="Through the use of scriptable objects, completely unique characters can be created with ease; This is everything from the attacks of the character, to whether they act cowardly and run away. "
+          image="\PortfolioImages\AIScripting\Archetypes.png"
+        ></feature-card>
+
+        <feature-card
+          title="Tile Attack System"
+          description="Tile based attacks that can have a variety of ranges, targets and effects"
+          image="\PortfolioImages\AIScripting\AttackTiles.jpg"
+        >
+        </feature-card>
+
+        <feature-card
+          title="Heatmap Analysis"
+          description="A turn based heat map analysis of the map with various factors. 
+          <br><br> Offensive : Opportunity to attack, A score that represents the maximum potential damage of a square.
+          <br><br> Defensive : Proximity to allies, and opportunities for defensive actions.
+          <br><br> Safety : The maximum damage the unit could potentially take."
+          image="\PortfolioImages\AIScripting\Heatmap.png"
+        >
+        </feature-card>
+
+        <feature-card
+          title="Utility System"
+          description="My own implemenation of utility AI, this system takes into account a unit's intelligence to induce variable fuzzy logic, furthermore depending on a units weighting it will favour, offensive or defence playstyles; meaning the utility system can create a large range of behaviours with simple parameter changes, in addition due to the parameter driven nature; gameplay effects can directly affect the behaviour of an AI, e.g. an unit could be taunted and become fully offensive or a barbarian could be made a coward and run away. <br><br> This is brilliant as it allows gameplay altering effects to feel much more natural and reactive, which helps the AI imitate a human player and adds weight to it's actions."
+          image=""
+        >
+        </feature-card>
+      </project-features>
+    </div>
+  </body>
+</html>

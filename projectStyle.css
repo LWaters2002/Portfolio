@@ -83,7 +83,7 @@ iframe {
 
 .feature-card {
   display: block;
-  width: fit-content;
+  width: fit-content; 
   height: fit-content;
   box-sizing: block;
   width: 80%;
@@ -99,6 +99,15 @@ iframe {
   overflow: hidden;
   text-align: left;
   filter: drop-shadow(0px 4px 0px var(--c_secondary));
+}
+
+.featureTile img 
+{
+  display: block;
+  width: 100%;
+  max-width: 20vw;
+  padding-bottom: 10px;;
+  margin: auto;
 }
 
 

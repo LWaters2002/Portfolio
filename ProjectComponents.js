@@ -9,9 +9,7 @@ class ProjectDescription extends HTMLElement {
     let skills = this.attributes.skills.value;
 
     {
-      this.innerHTML =
-
-        `      <div class="container">
+      this.innerHTML = `      <div class="container">
 <div class="textBox">
   <h2>Description</h2>
   <p>
@@ -34,7 +32,7 @@ class ProjectDescription extends HTMLElement {
     </div>
   </div>
 </div>
-</div>`
+</div>`;
     }
   }
 }
@@ -47,7 +45,6 @@ class FeatureCard extends HTMLElement {
   connectedCallback() {
     let title = this.attributes.title.value;
     let description = this.attributes.description.value;
-    let image = this.attributes.image.value;
 
     setTimeout(() => {
       let start = `
@@ -58,15 +55,18 @@ class FeatureCard extends HTMLElement {
       let end = `    </div>
   </div>`;
 
-      let core =
-        `
+      let core = `
       <h2>${title}</h2>
       <p>
     ${description}
       </p>
       `;
 
-      let content = start;
+      let content;
+
+      content += start;
+
+      content += this.CheckImage();
       content += core;
 
       content += this.CheckVideo();
@@ -74,14 +74,13 @@ class FeatureCard extends HTMLElement {
       content += end;
 
       this.innerHTML = content;
-    })
+    });
   }
 
   CheckVideo() {
     if (this.hasAttribute("video")) {
       let video = this.attributes.video.value;
-      var videoBlock =
-        `      <div style="width: 100%; margin: 10px">
+      var videoBlock = `      <div style="width: 100%; margin: 10px">
     <div class="player">
       <iframe
         width="560"
@@ -98,7 +97,17 @@ class FeatureCard extends HTMLElement {
 
       return videoBlock;
     }
+    return "";
+  }
 
+  CheckImage() {
+    if (this.hasAttribute("image")) {
+      let image = this.attributes.image.value;
+
+      var imageBlock = `<img src="${image}">`;
+
+      return imageBlock;
+    }
     return "";
   }
 }
@@ -120,9 +129,8 @@ class ProjectIntro extends HTMLElement {
     <iframe class="player" type="text/html" width="640" height="360"
       src="https://www.youtube.com/embed/${video}"
       frameborder="0"></iframe>
-      `
-    })
-
+      `;
+    });
   }
 }
 
@@ -132,8 +140,8 @@ class ProjectFeature extends HTMLElement {
   }
 
   connectedCallback() {
-
-    setTimeout(() => { // Uses timeout to load DOM first
+    setTimeout(() => {
+      // Uses timeout to load DOM first
       let content = this.innerHTML;
 
       let featuresWorked = `
@@ -144,14 +152,12 @@ class ProjectFeature extends HTMLElement {
       </div>
   
       <div class="features">
-        `
+        `;
       featuresWorked += content;
-      featuresWorked += '</div>';
+      featuresWorked += "</div>";
 
       this.innerHTML = featuresWorked;
     });
-
-
   }
 }
 
