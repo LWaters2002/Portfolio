@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/Navbar.css" />
+    <link rel="stylesheet" href="/projectStyle.css" />
+    <script src="scriptSrc.js"></script>
+    <script src="/Components.js"></script>
+    <script src="/ProjectComponents.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
 
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/Navbar.css" />
-  <link rel="stylesheet" href="/projectStyle.css" />
-  <script src="scriptSrc.js"></script>
-  <script src="/Components.js"></script>
-  <script src="/ProjectComponents.js"></script>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap");
+      body {
+        background-image: url("/dnd.png");
+        background-size: 300px;
+        background-blend-mode: multiply;
+      }
+    </style>
 
-    body {
-      background-image: url("/dnd.png");
-      background-size: 300px;
-      background-blend-mode: multiply;
-    }
-  </style>
+    <title>Liam Waters - Souls N Rolls</title>
+    <header-bar></header-bar>
+  </head>
 
-  <title>Liam Waters - Souls N Rolls</title>
-  <header-bar></header-bar>
-</head>
+  <body>
+    <!-- Main -->
 
-<body>
+    <div class="main">
+      <project-intro
+        title="Souls N' Rolls"
+        tagline="Souls like combat delivered through a DND esque package"
+        video="LNNEChrZ05s"
+      >
+      </project-intro>
 
-  <!-- Main -->
+      <h2><a href="https://gitlab.com/LWaters2002/agtd">GITLAB</a></h2>
 
-  <div class="main">
+      <project-description
+        description="A souls-like game utilising DND style stats, with systems
+    implemented in a balance of C++ and blueprint."
+        software="Unreal Engine, Rider, Photoshop, Machinations and Word"
+        skills="Unreal Engine, C++, Blueprint, Root Animation, UI design,
+      Technical Diagrams and documentation, Balancing."
+      ></project-description>
 
-    <project-intro title="Souls N' Rolls" tagline="Souls like combat delivered through a DND esque package" video="LNNEChrZ05s">
-    </project-intro>
+      <project-features>
+        <feature-card
+          title="Inventory System"
+          description="A classic RPG style inventory system programmed created in C++
+      serialized and editable in blueprint for designers."
+          image=""
+        ></feature-card>
 
-    <project-description description="A souls-like game utilising DND style stats, with systems
-    implemented in a balance of C++ and blueprint." software="Unreal Engine, Rider, Photoshop, Machinations and Word"
-      skills="Unreal Engine, C++, Blueprint, Root Animation, UI design,
-      Technical Diagrams and documentation, Balancing."></project-description>
-
-    <project-features>
-      <feature-card title="Inventory System" description="A classic RPG style inventory system programmed created in C++
-      serialized and editable in blueprint for designers." image=""></feature-card>
-
-      <feature-card title="Quests and Objectives" description="A fully modular system for creating quests and objectives,
+        <feature-card
+          title="Quests and Objectives"
+          description="A fully modular system for creating quests and objectives,
       serializable in editor and can be created through unreal data
-      assets." image=""></feature-card>
+      assets."
+          image=""
+        ></feature-card>
 
-      <feature-card title="Enemy AI" description="Darksouls style enemy AI using Unreal's blackboarding system"
-        image=""></feature-card>
+        <feature-card
+          title="Enemy AI"
+          description="Darksouls style enemy AI using Unreal's blackboarding system"
+          image=""
+        ></feature-card>
 
-      <feature-card title="Souls-Like Combat" description="Rolling, a bit of magic, and a lot of melee combat. A set of
-      systems for close quarters combat, with a focus on game feel." image=""></feature-card>
+        <feature-card
+          title="Souls-Like Combat"
+          description="Rolling, a bit of magic, and a lot of melee combat. A set of
+      systems for close quarters combat, with a focus on game feel."
+          image=""
+        ></feature-card>
 
-      <feature-card title="Dialogue System" description="A modular dialogue system with branching dialogue trees as well as
+        <feature-card
+          title="Dialogue System"
+          description="A modular dialogue system with branching dialogue trees as well as
       the option to accept and finish quests, on top of accepting
-      rewards." image=""></feature-card>
-    </project-features>
+      rewards."
+          image=""
+        ></feature-card>
+      </project-features>
 
-  <!-- <div class="gallery">
+      <!-- <div class="gallery">
         <h1 style="font-weight: 600; font-size: 7em; letter-spacing: 4px">
           GALLERY
         </h1>
@@ -68,7 +93,6 @@
           <img src="./PortfolioImages/HyeCover.PNG" alt="" />
         </div>
       </div> -->
-  </div>
-</body>
-
+    </div>
+  </body>
 </html>
